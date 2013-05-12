@@ -1,4 +1,9 @@
 <?php
+/*
+ * FirefoxPHP
+ */
+require_once 'FirePHPCore/FirePHP.class.php';
+ob_start();
 /**
  * The base configurations of the WordPress.
  *
