@@ -59,6 +59,7 @@ blockquote, q {
 }
 a img {
 	border: 0;
+	float: left;
 }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -521,8 +522,10 @@ a:hover {
 	z-index: 9999;
 }
 #site-title {
+	margin-bottom:0;
 	margin-right: 270px;
-	padding: 3.65625em 0 0;
+	padding: 40px 20px 0;
+	float: left;
 }
 #site-title a {
 	color: #111;
@@ -539,12 +542,13 @@ a:hover {
 #site-description {
 	color: #7a7a7a;
 	font-size: 14px;
-	margin: 0 270px 3.65625em 0;
+	margin: 0 20px 20px;
+	padding-top: 0;
+	float:left;
 }
 #branding img {
-	height: auto;
 	display: block;
-	width: 100%;
+	width : 100%;
 }
 
 
@@ -614,16 +618,16 @@ a:hover {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background: #efefef;
+	background: #555555;
 }
 #access li:hover > a,
 #access a:focus {
-	background: #f9f9f9; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-	color: #373737;
+	background: #555555; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#555555, #555555);
+	background: -o-linear-gradient(#555555, #555555);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555555), to(#555555)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#555555, #555555);
+	color: #efefef;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -2715,3 +2719,31 @@ p.comment-form-comment {
 #ie8 section.feature-image.large img {
 	width: 100%;
 }
+
+#sanjc-top-navi {
+	float:right;
+	margin-top: 40px;
+    z-index: 10000;
+    position: absolute;
+}
+
+/* お問い合わせフォーム start */
+
+div#trust-form.contact-form form table tbody tr th {
+	border: 1px solid #AAAAAA;
+    background-color: #FFFFCC;
+    color: #222222;
+    font-size:100%;
+}
+
+div#trust-form.contact-form form table tbody tr td {
+    border: 1px solid #AAAAAA;
+    font-size:100%;
+}
+
+div#trust-form.contact-form input,
+div#trust-form.contact-form textarea {
+	border: 1px solid;
+}
+
+/* お問い合わせフォーム end */
