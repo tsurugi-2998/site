@@ -47,29 +47,55 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/log-style.css" rel="stylesheet" />
+<link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/log-style.css?20130719" rel="stylesheet" />
 <link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/LogSearch.css" rel="stylesheet" />
 <link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/redmond/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" />
-<link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css?20130617" rel="stylesheet" />
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/messages_ja.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.ui.datepicker-ja.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/LogSearch.js"></script>
+<script type='text/javascript' src='http://www.sanjc-gijutsu.com/site/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.4.3'></script>
 <script type="text/javascript">
     main('<?php echo $_SERVER['HTTP_USER_AGENT']; ?>');
 </script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-ui-1.10.2.custom.min.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.ui.datepicker-ja.js"></script>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; background-image: url('http://www.sanjc-gijutsu.com/site/wp-content/uploads/2013/07/VA0anK.png'); background-repeat: repeat-x; background-position: top left; background-attachment: scroll; }
+</style>
+<!-- Google Analytics Tracking by Google Analyticator 6.4.4.3: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">window.google_analytics_uacct = "tsurugi29@gmail.com";</script>
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-41673849-1']);
+        _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google 
+        
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+				<?php include_once 'site-title.php';?>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<?php include_once 'top-menu.php';?>
 			</hgroup>
 
 			<?php

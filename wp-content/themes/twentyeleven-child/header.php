@@ -46,7 +46,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?20130712" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?20130719" />
 <link type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet" />
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
@@ -74,9 +74,9 @@
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo content_url() . '/uploads/sanjc/img/sanjc.jpg'; ?>"></a></span></h1>
-				<?php include_once 'top-menu.php';?>
+				<?php include_once 'site-title.php';?>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<?php include_once 'top-menu.php';?>
 			</hgroup>
 
 			<?php
